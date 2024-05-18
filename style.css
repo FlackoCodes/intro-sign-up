@@ -103,6 +103,7 @@ form input{
     box-shadow: 0 8px 12px hsla(0, 0%, 0%, 0.15);
     cursor: pointer;
     font-weight: 700;
+    margin-top: 5px;
 }
 
 .claim-btn:hover{
@@ -116,15 +117,25 @@ form input{
 img{
     width: 15px;
     position: absolute;
-    top: 15px;
+    top: 10px;
     right: 20px;
+}
+
+.error-fname,
+.error-lname,
+.error-email,
+.error-password
+{
+    /* display: block; */
+    text-align: right;
+    color: hsl(0, 100%, 74%);
     display: none;
 }
 
-.error-name{
-    display: block;
-    text-align: right;
-    color: hsl(0, 100%, 74%);
+.first-name-error-image,
+.last-name-error-image,
+.email-error-image,
+.password-error-image{
     display: none;
 }
 
@@ -166,4 +177,12 @@ img{
         padding: .8rem;
         margin: .7rem 0;
     }
+
+    img{
+        width: 15px;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+    
 }
